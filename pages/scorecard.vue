@@ -2,7 +2,7 @@
   <div id="scorecard-page" class="page-wrapper about-page content-page">
     <site-hero
       title="Scorecard"
-      subtitle="Example About Page"
+      subtitle="Technology Products Scorecard"
       image="/uploads/about-hero.jpg"
     ></site-hero>
     <main-section theme="sidebar-right">
@@ -12,11 +12,6 @@
           <div>
             <b-table striped hover :items="items"></b-table>
           </div>
-          <p>
-            <strong>
-              Edit this page in<code>/pages/about.vue</code>to fit your needs.
-            </strong>
-          </p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
             eligendi impedit inventore ipsa laboriosam libero magnam modi odio,
@@ -102,14 +97,17 @@ import QuoteCard from '~/components/cards/QuoteCard'
 export default {
   head() {
     return {
-      title: `About | ${this.$siteConfig.siteName}`,
+      title: `About | ${this.$siteConfig.siteName}`
+    },
+  data()
+    return {
       items: [
           { age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
           { age: 21, first_name: 'Larsen', last_name: 'Shaw' },
           { age: 89, first_name: 'Geneva', last_name: 'Wilson' },
           { age: 38, first_name: 'Jami', last_name: 'Carney' }
         ]
-    }
+    }  
   },
   components: { QuoteCard }
 }
