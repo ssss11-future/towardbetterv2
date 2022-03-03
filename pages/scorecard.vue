@@ -9,6 +9,9 @@
       <template v-slot:default>
         <div class="content">
           <h3>Scorecard is here!!!</h3>
+          <div>
+            <b-table striped hover :items="items"></b-table>
+          </div>
           <p>
             <strong>
               Edit this page in<code>/pages/about.vue</code>to fit your needs.
@@ -99,7 +102,13 @@ import QuoteCard from '~/components/cards/QuoteCard'
 export default {
   head() {
     return {
-      title: `About | ${this.$siteConfig.siteName}`
+      title: `About | ${this.$siteConfig.siteName}`,
+      items: [
+          { age: 40, first_name: 'Dickerson', last_name: 'Macdonald' },
+          { age: 21, first_name: 'Larsen', last_name: 'Shaw' },
+          { age: 89, first_name: 'Geneva', last_name: 'Wilson' },
+          { age: 38, first_name: 'Jami', last_name: 'Carney' }
+        ]
     }
   },
   components: { QuoteCard }
