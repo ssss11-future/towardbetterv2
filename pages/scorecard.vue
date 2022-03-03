@@ -10,7 +10,10 @@
         <div class="content">
           <h3>Scorecard is here!!!</h3>
           <div>
-            <b-table striped hover :items="items"></b-table>
+            <vuetable ref="vuetable"
+              api-url="https://vuetable.ratiw.net/api/users"
+              :fields="['name', 'email', 'birthdate']"
+            ></vuetable>
           </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
@@ -94,10 +97,12 @@
 </template>
 <script>
 import QuoteCard from '~/components/cards/QuoteCard'
+import Vuetable from 'vuetable-2/src/components/Vuetable'
+
 export default {
   head() {
     return {
-      title: `About | ${this.$siteConfig.siteName}`
+      title: `Scorecard | ${this.$siteConfig.siteName}`
     },
   data()
     return {
