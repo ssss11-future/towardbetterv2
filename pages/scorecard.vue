@@ -114,6 +114,6 @@ export default {
         ]
     }  
   },
-  components: { QuoteCard }
+  components: { QuoteCard, Vuetable }
 }
 </script>
