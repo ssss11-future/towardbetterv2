@@ -1,8 +1,8 @@
 {
-  "name": "nuxtlify",
+  "name": "towardbetter",
   "version": "1.0.0",
-  "description": "Blog template for Nuxt.js/Netlify",
-  "author": "Daniel Kelly",
+  "description": "bit by bit",
+  "author": "ssss11",
   "license": "MIT",
   "scripts": {
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
