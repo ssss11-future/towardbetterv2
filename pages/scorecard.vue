@@ -11,7 +11,7 @@
           <h3>Scorecard is here!!!</h3>
           <div>
             <vuetable ref="vuetable"
-              api-url="https://vuetable.ratiw.net/api/users"
+              api-url="https://towardbetter.org/data.json"
               :fields="['name', 'email', 'birthdate']"
             ></vuetable>
           </div>
