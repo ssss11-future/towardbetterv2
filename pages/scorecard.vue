@@ -15,6 +15,24 @@
               :fields="['name', 'email']"
             ></vuetable>
           </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Bob
+                </td>
+                <td>
+                  bob@hi.com
+                </td>
+              </tr>
+            </tbody>
+          </table>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
             eligendi impedit inventore ipsa laboriosam libero magnam modi odio,
